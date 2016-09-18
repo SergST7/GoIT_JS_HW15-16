@@ -23,7 +23,7 @@ $(function () {
 
       success:function(data){
         console.log(data);
-        
+
         render('#resultTmpl', data,'.wrapper-search');
         count += 10;
       }
@@ -42,6 +42,19 @@ $(function () {
     var tmpl = _.template($(id).html());
     var result = tmpl(obj);
     $(parent).append(result);
+  }
+
+  // наследование
+  function Human(name, age, gender, height, weight) {
+    this.name = name,
+    this.age = age,
+    this.gender = gender,
+    this.height = height,
+    this.weight = weight
+  }
+
+  function Worker() {
+    
   }
 
 });
