@@ -5,10 +5,16 @@
 
 $(function () {
 
-	$('.start').click(function () {
+	$('#search').keydown(function(e) {
+		if (e.keyCode == 13) {
+			search();
+		}
+	});
 
+	$('.start').click(search);
+
+	function search() {
 		var searchStr = $('#search').val().trim();
-
 
 		if (searchStr) {
 			$('.wrapper-search').html('');
@@ -27,8 +33,9 @@ $(function () {
 				}
 			})
 		}
-		else return
-	});
+		else return false
+
+	}
 
 	function render(id, obj, parent) {
 		var tmpl = _.template($(id).html());
@@ -100,7 +107,7 @@ $(function () {
 	// наследуемся от Human
 	Student.prototype = Object.create(Human.prototype);
 	// восстановим конструктор (переписался при наследовании)
-	// Student.prototype.constructor = Student;
+	Student.prototype.constructor = Student;
 
 	Student.prototype.watchingSer = function () {
 		console.log(this.name + " is watching series now!")

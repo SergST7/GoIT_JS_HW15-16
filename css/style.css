@@ -10,8 +10,8 @@ body {
 }
 
 h2 {
+	margin: 30px 0 20px 0;
 	text-align: center;
-	margin: 30px 0 20px 0 ;
 }
 
 .clr:after {
@@ -29,30 +29,30 @@ h2 {
 	font-size: 18px;
 }
 
-.googleAPI{
+.googleAPI {
 	margin-bottom: 60px;
 }
 
-#search{
-	padding-left:5px;
+#search {
 	height: 25px;
 	width: 50%;
+	padding-left: 5px;
 }
 
-.start{
-	height: 29px;
+.start {
 	width: 100px;
+	height: 29px;
 	font-weight: 700;
 }
 
-.search-form{
-	text-align: center;
+.search-form {
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .search-stat {
-	font-size:12px;
 	padding: 10px 20px;
+	font-size: 12px;
 }
 
 .result__list {
@@ -65,11 +65,11 @@ h2 {
 	border-top: 1px solid grey;
 }
 
-.result__item h3{
+.result__item h3 {
 	padding: 5px 0;
 }
 
-.result__link{
+.result__link {
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -78,12 +78,12 @@ h2 {
 	background-color: #e7e7e7;
 }
 
-.result__text{
+.result__text {
+	padding: 5px 0;
 	font-size: 13px;
-	padding: 5px 0 ;
 }
 
-.result__url{
+.result__url {
 	color: darkgreen;
 	font-size: 13px;
 }
